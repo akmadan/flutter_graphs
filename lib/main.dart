@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_graphs/charts/barChart.dart';
+import 'package:flutter_graphs/charts/lineChart.dart';
 import 'package:flutter_graphs/charts/pieChart.dart';
 
 void main() {
@@ -15,6 +15,6 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Graphs',
         theme: ThemeData(brightness: Brightness.dark),
         debugShowCheckedModeBanner: false,
-        home: BarChartWidget());
+        home: LineChartWidget());
   }
 }

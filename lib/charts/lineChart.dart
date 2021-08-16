@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-class BarChartWidget extends StatefulWidget {
-  const BarChartWidget({Key? key}) : super(key: key);
+class LineChartWidget extends StatefulWidget {
+  const LineChartWidget({Key? key}) : super(key: key);
 
   @override
-  _BarChartWidgetState createState() => _BarChartWidgetState();
+  _LineChartWidgetState createState() => _LineChartWidgetState();
 }
 
-class _BarChartWidgetState extends State<BarChartWidget> {
+class _LineChartWidgetState extends State<LineChartWidget> {
   @override
   Widget build(BuildContext context) {
     final List<SalesData> chartData = [
@@ -22,7 +22,7 @@ class _BarChartWidgetState extends State<BarChartWidget> {
     return Scaffold(
         body: Scaffold(
       appBar: AppBar(
-        title: Text('Bar Chart'),
+        title: Text('Line Chart'),
       ),
       body: Container(
         margin: EdgeInsets.all(20),
