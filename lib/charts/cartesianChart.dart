@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-class LineChartWidget extends StatefulWidget {
-  const LineChartWidget({Key? key}) : super(key: key);
+class Cartesian extends StatefulWidget {
+  const Cartesian({Key? key}) : super(key: key);
 
   @override
-  _LineChartWidgetState createState() => _LineChartWidgetState();
+  _CartesianState createState() => _CartesianState();
 }
 
-class _LineChartWidgetState extends State<LineChartWidget> {
+class _CartesianState extends State<Cartesian> {
   @override
   Widget build(BuildContext context) {
     final List<SalesData> chartData = [
@@ -34,7 +34,8 @@ class _LineChartWidgetState extends State<LineChartWidget> {
                     legend: Legend(isVisible: true),
                     series: <ChartSeries>[
               // Renders line chart
-              LineSeries<SalesData, int>(
+              WaterfallSeries<SalesData, int>(
+                  //Line | Bar |  Spline  |  Area  |  Column  | Waterfall
                   dashArray: <double>[10, 5], //length, gap
                   color: Colors.red,
                   dataSource: chartData,
