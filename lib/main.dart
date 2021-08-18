@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_graphs/charts/cartesianChart.dart';
-import 'package:flutter_graphs/charts/pieChart.dart';
-import 'package:flutter_graphs/charts/radialChart.dart';
+import 'package:flutter_graphs/charts/liveChart.dart';
 
 void main() {
   runApp(new MyApp());
@@ -16,6 +14,6 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Graphs',
         theme: ThemeData(brightness: Brightness.dark),
         debugShowCheckedModeBanner: false,
-        home: RadialChartWidget());
+        home: LiveChartWidget());
   }
 }
